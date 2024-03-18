@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: theme('background.primary');
+    color: theme('colors.soft');
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer utilities {
+  .container {
+    display: flex;
+    padding: 10px;
+  }
+
+  .menu {
+    flex: 1;
+    background-color: theme('background.soft');
+  }
+
+  .content {
+    flex: 4
+  }
+}
