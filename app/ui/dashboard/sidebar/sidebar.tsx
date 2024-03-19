@@ -1,5 +1,5 @@
 import React from 'react'
-import { HandCoins, CircleUser, LayoutDashboard, Package, BriefcaseBusiness, AreaChart, Users, Bolt, CircleHelp } from 'lucide-react'
+import { HandCoins, CircleUser, LayoutDashboard, Package, BriefcaseBusiness, AreaChart, Users, Bolt, CircleHelp, LogOut } from 'lucide-react'
 
 import MenuLink from './_components/menu-link'
 import Image from 'next/image'
@@ -93,6 +93,10 @@ const Sidebar = () => {
           ))
         }
       </ul>
+      <button className='flex items-center p-3 my-1 gap-2 cursor-pointer rounded-md border-none w-full text-white hover:bg-white hover:text-black transition-all'>
+        <LogOut />
+        LogOut
+      </button>
     </div>
   )
 }

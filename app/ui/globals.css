@@ -18,10 +18,6 @@
   .container {
     display: flex;
     padding: 10px;
-  }
-
-  .menu {
-    flex: 1;
     background-color: theme('background.soft');
   }
 

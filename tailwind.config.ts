@@ -21,6 +21,11 @@ const config: Config = {
       },
       colors: {
         "soft": "#b7bac1",
+        "card": "#182237",
+        "cardHover": "#2e374a",
+        "pending": "#f7cb7375",
+        "done": "#afd6ee75",
+        "cancelled": "#f7737375",
       },
     },
   },

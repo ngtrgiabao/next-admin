@@ -1,4 +1,4 @@
-import Navbar from "../ui/dashboard/navbar/navbar";
+import Navbar from "../ui/dashboard/navbar";
 import Sidebar from "../ui/dashboard/sidebar/sidebar";
 
 interface LayoutProps {
@@ -7,8 +7,8 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="container p-5">
-      <div className="menu">
+    <div className="p-5 flex dark">
+      <div className="flex-1">
         <Sidebar />
       </div>
       <div className="content p-5">
