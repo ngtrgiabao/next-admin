@@ -8,14 +8,14 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className='container flex items-center justify-between'>
+    <div className='flex items-center justify-between p-2 bg-card'>
       <div className='text-[textSoft] font-bold capitalize'>
         {
           pathname.split("/").pop()
         }
       </div>
       <div className='flex items-center gap-5'>
-        <div className='flex items-center gap-2 bg-[#2e374a] p-2 rounded-lg'>
+        <div className='flex items-center gap-2 bg-[#2e374a] p-2 rounded-lg w-max'>
           <Search size={18} />
           <input type='text' placeholder='Search...' className='bg-transparent border-none outline-none color-[text]' />
         </div>

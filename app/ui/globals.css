@@ -15,12 +15,6 @@
 }
 
 @layer utilities {
-  .container {
-    display: flex;
-    padding: 10px;
-    background-color: theme('background.soft');
-  }
-
   .content {
     flex: 4
   }

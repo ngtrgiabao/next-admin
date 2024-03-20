@@ -26,6 +26,8 @@ const config: Config = {
         "pending": "#f7cb7375",
         "done": "#afd6ee75",
         "cancelled": "#f7737375",
+        "view": "teal",
+        "delete": "crimson"
       },
     },
   },

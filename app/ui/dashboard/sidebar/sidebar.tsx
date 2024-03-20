@@ -69,7 +69,7 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
-    <div className='container flex flex-col'>
+    <div className='p-2 bg-card flex flex-col h-max'>
       <div className='flex items-center gap-5 mb-5'>
         <Image src="https://i.pinimg.com/564x/27/d1/8b/27d18b690462568a72ed4aeeeeadae64.jpg" width={50} height={50} alt='yanji' className='rounded-full object-cover' />
         <div className='flex flex-col'>
