@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 const plugin = require("tailwindcss/plugin");
 
 const config: Config = {
-  mode: 'jit',
+  mode: "jit",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,25 +16,22 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       background: {
-        "primary": "#151c2c",
-        "soft": "#182237",
+        primary: "#151c2c",
+        soft: "#182237",
       },
       colors: {
-        "soft": "#b7bac1",
-        "card": "#182237",
-        "cardHover": "#2e374a",
-        "pending": "#f7cb7375",
-        "done": "#afd6ee75",
-        "cancelled": "#f7737375",
-        "view": "teal",
-        "delete": "crimson"
+        soft: "#b7bac1",
+        card: "#182237",
+        cardHover: "#2e374a",
+        pending: "#f7cb7375",
+        done: "#afd6ee75",
+        cancelled: "#f7737375",
+        view: "teal",
+        delete: "crimson",
       },
     },
   },
-  plugins: [
-  ],
-  safelist: [
-    "bg-slate-800"
-  ],
+  plugins: [],
+  safelist: ["bg-slate-800"],
 } satisfies Config;
 export default config;

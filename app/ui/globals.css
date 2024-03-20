@@ -4,8 +4,8 @@
 
 @layer base {
   body {
-    background: theme('background.primary');
-    color: theme('colors.soft');
+    background: theme("background.primary");
+    color: theme("colors.soft");
   }
 
   a {
@@ -16,6 +16,6 @@
 
 @layer utilities {
   .content {
-    flex: 4
+    flex: 4;
   }
 }
