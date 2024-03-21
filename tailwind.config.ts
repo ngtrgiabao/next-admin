@@ -28,6 +28,7 @@ const config: Config = {
         cancelled: "#f7737375",
         view: "teal",
         delete: "crimson",
+        primary: "#151c2c"
       },
     },
   },

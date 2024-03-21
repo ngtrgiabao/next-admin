@@ -2,8 +2,9 @@
 const nextConfig = {
   images: {
     domains: ["i.pinimg.com"],
+    unoptimized: true
   },
-  output: 'export',
+  // output: 'export',
 };
 
 export default nextConfig;

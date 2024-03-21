@@ -47,7 +47,7 @@ const UsersPage = () => {
             <td className="p-2">active</td>
             <td className="p-2">
               <div className="flex items-center gap-2">
-                <Link href="/">
+                <Link href="/dashboard/users/test">
                   <button className="py-1 px-2 bg-view text-white border-none rounded-md cursor-pointer">
                     View
                   </button>
