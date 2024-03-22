@@ -30,6 +30,14 @@ const config: Config = {
         delete: "crimson",
         primary: "#151c2c"
       },
+      fontSize: {
+        "heading-1": "2.5rem",
+        "heading-2": "2rem",
+        "heading-3": "1.5rem",
+        "heading-4": "1.25rem",
+        "heading-5": "1rem",
+        "heading-6": "0.75rem",
+      }
     },
   },
   plugins: [],
