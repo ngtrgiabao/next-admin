@@ -7,6 +7,7 @@ import { fetchUsers } from "@/app/lib/services/user.service";
 
 const UsersPage = async () => {
   const users = await fetchUsers();
+  console.log(users)
 
   return (
     <div className="bg-card p-5 rounded-lg mt-5">
