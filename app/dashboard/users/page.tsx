@@ -1,11 +1,13 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 import SearchInput from "@/app/ui/dashboard/search-input";
 import Pagination from "@/app/ui/dashboard/pagination";
+import { fetchUsers } from "@/app/lib/services/user.service";
 
-const UsersPage = () => {
+const UsersPage = async () => {
+  const users = await fetchUsers();
+
   return (
     <div className="bg-card p-5 rounded-lg mt-5">
       <div className="flex items-center justify-between">
@@ -28,36 +30,42 @@ const UsersPage = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td className="p-2">
-              <div className="flex items-center gap-2">
-                <Image
-                  src="https://i.pinimg.com/564x/27/d1/8b/27d18b690462568a72ed4aeeeeadae64.jpg"
-                  alt="yanji"
-                  width={40}
-                  height={40}
-                  className="object-cover rounded-full"
-                />
-                Yanji
-              </div>
-            </td>
-            <td className="p-2">yanji@gmail.com</td>
-            <td className="p-2">13.01.2024</td>
-            <td className="p-2">Admin</td>
-            <td className="p-2">active</td>
-            <td className="p-2">
-              <div className="flex items-center gap-2">
-                <Link href="/dashboard/users/test">
-                  <button className="py-1 px-2 bg-view text-white border-none rounded-md cursor-pointer">
-                    View
-                  </button>
-                </Link>
-                <button className="py-1 px-2 bg-delete text-white border-none rounded-md cursor-pointer">
-                  Delete
-                </button>
-              </div>
-            </td>
-          </tr>
+          {
+            users.map(user => (
+              <tr key={user._id}>
+                <td className="p-2">
+                  <div className="flex items-center gap-2">
+                    <Image
+                      src="https://i.pinimg.com/564x/27/d1/8b/27d18b690462568a72ed4aeeeeadae64.jpg"
+                      alt="yanji"
+                      width={40}
+                      height={40}
+                      className="object-cover rounded-full"
+                    />
+                    {/* Yanji */}
+                    {user.username}
+                  </div>
+                </td>
+                <td className="p-2">yanji@gmail.com</td>
+                <td className="p-2">13.01.2024</td>
+                <td className="p-2">Admin</td>
+                <td className="p-2">active</td>
+                <td className="p-2">
+                  <div className="flex items-center gap-2">
+                    <Link href="/dashboard/users/test">
+                      <button className="py-1 px-2 bg-view text-white border-none rounded-md cursor-pointer">
+                        View
+                      </button>
+                    </Link>
+                    <button className="py-1 px-2 bg-delete text-white border-none rounded-md cursor-pointer">
+                      Delete
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            ))
+          }
+
         </tbody>
       </table>
       <Pagination />
